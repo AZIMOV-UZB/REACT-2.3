@@ -3,15 +3,17 @@ import { IoLocationOutline } from "react-icons/io5";
 import { FaHeadphonesAlt } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { CiClock1 } from "react-icons/ci";
+import rasm from "../../assets/Header.svg"
+
 const Footer = () => {
   return (
-    <div className="container mx-auto mt-10">
+    <div className="container mx-auto mt-10 px-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-8">
         <div className="flex flex-col gap-5">
           <img
             className="w-[120px] object-contain h-[40px]"
-            src="https://logodix.com/logo/26494.png"
-            alt=""
+            src={rasm}
+            alt="foto"
           />
           <div className="flex items-start md:flex lg:flex gap-[8px] ">
             <button className="pt-[5px]">
@@ -114,14 +116,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className=" flex flex-col gap-1 items-center mt-[20px]">
-        <p className="text-[15px] text-[#0009] text-start">
-          © 2022, Nest - HTML Ecommerce Template
-        </p>
-        <p className="text-[12px] text-start text-[#0009]">
-          All rights reserved
-        </p>
-      </div>
+    
     </div>
   );
 };
